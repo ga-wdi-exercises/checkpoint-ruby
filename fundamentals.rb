@@ -3,6 +3,9 @@
 # When called the method should print to the terminal:
 # "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 # Type your solution directly below this line:
+class offer_rose
+  attr_accessor :person
+  puts "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 
 
 
@@ -26,7 +29,8 @@ town = {
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
 
-
+residents.delete(2)
+residents.new("Belle")
 
 
 
@@ -43,3 +47,8 @@ friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 # "Belle is friends with Lumière"
 # "Belle is friends with Mrs. Potts"
 # Type your solution directly below this line:
+
+friends.each do |friend|
+    puts friend[:]
+
+  

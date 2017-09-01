@@ -4,6 +4,9 @@
 # - A `greet` instance method
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
+class Animal
+  attr_accessor :name, :greet, :get, :set
+  
 
 
 
@@ -22,8 +25,7 @@
 # - A `king` (Boolean) attribute
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
-
-
+class Lion
 
 
 
