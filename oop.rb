@@ -51,8 +51,9 @@ class Lion < Animal
   end
 
   def king_name
-    if @king == @name
-      puts "#{@name} is King"
+    if @name == "Simba"
+      @king = true
+      puts "Simba is King"
     end
   end
 end
