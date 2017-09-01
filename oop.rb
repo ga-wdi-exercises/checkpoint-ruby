@@ -36,12 +36,12 @@ pumba = Animal.new("Pumba")
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
 class Lion < Animal
-  initialize()
+  def initialize(name)
     super
     if @name == "Simba"
-      king = true
+      @king = true
     else
-      king = false
+      @king = false
     end
   end
 end
