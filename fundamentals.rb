@@ -4,6 +4,7 @@
 # "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 # Type your solution directly below this line:
 
+def offer_rose( person )
 
 
 
@@ -26,7 +27,8 @@ town = {
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
 
-
+residents.delete(1)
+residents.push(Belle)
 
 
 
