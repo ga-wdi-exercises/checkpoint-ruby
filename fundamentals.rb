@@ -28,7 +28,6 @@ town = {
 # - Remove "Belle" from `residents`
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
-
  town[:residents].delete("Belle")
  town[:castle][:guests].push("Belle")
 
@@ -43,7 +42,6 @@ friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 # "Belle is friends with Lumière"
 # "Belle is friends with Mrs. Potts"
 # Type your solution directly below this line:
-
   for friend in friends
     puts friend
   end

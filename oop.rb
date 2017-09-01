@@ -4,7 +4,6 @@
 # - A `greet` instance method
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
-
 class Animal
 
   def initialize(name)
@@ -37,7 +36,6 @@ end
 # - A `king` (Boolean) attribute
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
-
 class Lion < Animal
 
   def initialize(name)
