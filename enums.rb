@@ -14,6 +14,9 @@ lost_boys = [
 # Type your solution directly below this line:
 
 
+lost_boys.each do |age|
+  return [age]
+end
 
 
 
