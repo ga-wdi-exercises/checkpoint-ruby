@@ -6,6 +6,9 @@
 # Type your solution directly below this line:
 
 
+class Animal =
+
+
 
 
 # Question 7
