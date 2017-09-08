@@ -3,7 +3,9 @@
 # When called the method should return:
 # true (boolean) if the `weather` is `rainy` or false (boolean) if it is not rainy
 # Type your solution directly below this line:
-
+def offer_rose( person )
+  puts "Would you take this rose + #{person} + in exchange for giving an old beggar woman shelter form the bitter cold?"
+end
 
 
 # Question 2
@@ -22,6 +24,7 @@ town = {
 # - Remove "Maurice" from `residents`
 # - Add "Maurice" to the `other_residents` array
 # Type your solution directly below this line:
+(town[:residents]).delete_at(1)
 
 
 
