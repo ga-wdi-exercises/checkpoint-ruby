@@ -4,6 +4,9 @@
 # - An `eat` instance method
 # - The ability to "get" but NOT "set" `color`
 # Type your solution directly below this line:
+class Animal
+  attr_accessor :name, :greet, :get, :set
+  
 
 
 # Question 7
@@ -18,8 +21,7 @@
 # - A `bark` instance method the returns 'bark bark'
 # - A breed attribute that you are able to "get" and "set"
 # Type your solution directly below this line:
-
-
+class Lion
 
 
 # Question 9

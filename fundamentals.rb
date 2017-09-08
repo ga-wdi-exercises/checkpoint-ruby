@@ -3,6 +3,9 @@
 # When called the method should return:
 # true (boolean) if the `weather` is `rainy` or false (boolean) if it is not rainy
 # Type your solution directly below this line:
+class offer_rose
+  attr_accessor :person
+  puts "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 
 
 
@@ -23,7 +26,8 @@ town = {
 # - Add "Maurice" to the `other_residents` array
 # Type your solution directly below this line:
 
-
+residents.delete(2)
+residents.new("Belle")
 
 
 # Question 3
@@ -39,3 +43,8 @@ instructors = ["Ali", "Mike", "James", "Andy", "John", "Juan"]
 # "John is an instructor"
 # "Juan is an instructor"
 # Type your solution directly below this line:
+
+friends.each do |friend|
+    puts friend[:]
+
+  
