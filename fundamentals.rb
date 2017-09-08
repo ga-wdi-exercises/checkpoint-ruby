@@ -3,6 +3,9 @@
 # When called the method should return:
 # true (boolean) if the `weather` is `rainy` or false (boolean) if it is not rainy
 # Type your solution directly below this line:
+def offer_rose(person)
+  puts person
+end
 
 
 
@@ -22,8 +25,8 @@ town = {
 # - Remove "Maurice" from `residents`
 # - Add "Maurice" to the `other_residents` array
 # Type your solution directly below this line:
-
-
+  town[:residents].delete_at(1)
+  town[:castle][:guests].push("Belle")
 
 
 # Question 3
@@ -39,3 +42,9 @@ instructors = ["Ali", "Mike", "James", "Andy", "John", "Juan"]
 # "John is an instructor"
 # "Juan is an instructor"
 # Type your solution directly below this line:
+
+i = 0
+while i < friends.length
+  puts "Belle is friens with #{friends[i]}"
+  i = i + 1
+end
