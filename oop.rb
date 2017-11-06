@@ -6,6 +6,17 @@
 # Type your solution directly below this line:
 
 
+class Animal
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+
+  def greet
+    puts "Hi! My name is #{@name}"
+  end
+end
 
 
 # Question 7
@@ -13,6 +24,7 @@
 # Type your solution directly below this line:
 
 
+my_animal = Animal.new("Pumba")
 
 
 # Question 8
@@ -23,10 +35,21 @@
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
 
-
-
+class Lion < Animal
+  attr_accessor :king
+  def initialize(name)
+     @name = name
+    if name == "Simba"
+      @king = true
+    else
+      @king = false
+    end
+  end
+end
 
 
 # Question 9
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
+
+simba = Lion.new("Simba")
