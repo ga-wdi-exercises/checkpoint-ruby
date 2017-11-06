@@ -18,6 +18,7 @@ lost_boys = [
 
 
 
+
 # Question 5
 # Assume the following array:
 
@@ -27,3 +28,6 @@ children = ['Wendy', 'John', 'Michael']
 # of their names. Assign the returned array to a variable called `darling_children`.
 # Example: `Wendy` should become `Wendy Darling` in the new array.
 # Type your solution directly below this line:
+children.map { |each|  }
+ children.each { |each|  }
+  puts "#{children} Darling"
