@@ -6,12 +6,13 @@
 # Type your solution directly below this line:
 class Animal
   attr_accessor :name
+
   def initialize(name)
     @name = name
   end
 
   def greet
-    puts "hello #{@name}"
+    puts "Hi, my name is #{@name}"
   end
 end
 
@@ -21,7 +22,6 @@ end
 
 pumba = Animal.new("Pumba")
 
-
 # Question 8
 # Define a Ruby class called `Lion` that inherits from the `Animal` class.
 # Each lion should have the same attributes and methods as `Animal`. Each lion
@@ -29,8 +29,8 @@ pumba = Animal.new("Pumba")
 # - A `king` (Boolean) attribute
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
-def Lion < Animal
-  def initialize
+class Lion < Animal
+  def initialize(name)
     super(name)
     @king = @name == "Simba" ? true : false
   end
