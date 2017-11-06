@@ -4,14 +4,25 @@
 # - A `greet` instance method
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
+class Animal
+  attr_accessor :name
 
+  def initialize name
+    @name = name
+  end
+
+  def greet
+    puts "My name is #{@name}"
+  end
+
+end
 
 
 
 # Question 7
 # Create a new `Animal` instance with the name "Pumba".
 # Type your solution directly below this line:
-
+pumba = Animal.new "Pumba"
 
 
 
@@ -22,7 +33,14 @@
 # - A `king` (Boolean) attribute
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
+class Lion < Animal
+  attr_accessor :king
 
+  def initialize name
+    super name
+    @king = name == "Simba" ? true : false
+  end
+end
 
 
 
@@ -30,3 +48,4 @@
 # Question 9
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
+simba = Lion.new "Simba"
