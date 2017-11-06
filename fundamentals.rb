@@ -32,8 +32,7 @@ town = {
 town[:residents].delete("Belle")
 
 
-
-
+town[:guests] = ["Belle"]
 
 
 
