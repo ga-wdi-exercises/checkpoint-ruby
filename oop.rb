@@ -1,4 +1,3 @@
-require("pry")
 # Question 6
 # Define a Ruby class called `Animal`. Each `Animal` should have...
 # - A `name` (String) attribute
@@ -57,5 +56,3 @@ end
 # Type your solution directly below this line:
 
 Simba = Lion.new("Simba")
-
-binding.pry
