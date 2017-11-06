@@ -31,17 +31,16 @@ change = Animal.new('Puma')
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
 class Lion < Animal
-  attr_accessor :breed
-  def king
-    return ''
-  end
-  def initialize(color,breed)
-    super(color)
-    @breed = breed
-
+  attr_accessor :king
+  def initialize(name)
+     @name = name
+    if name == "Simba"
+      @king = true
+    else
+      @king = false
+    end
   end
 end
-
 
 
 
