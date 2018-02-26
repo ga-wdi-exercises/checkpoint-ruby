@@ -1,29 +1,27 @@
-# Ruby Checkpoint
+# Checkpoint: Ruby
+
+## Before You Start
+
+The test suite is located in `./test`. **Before you begin anything, run `bundle install`.**
+
+To run the tests in the terminal, run `rspec --format documentation`. Every time you make a change and save your files, you will need to manually re-run the tests. When you start, all of the tests will be failing; your goal is to make as many pass as you can in the hour provided.
+
+> HINT: read the output of the failing tests.
 
 ## Instructions
-Fork and clone this repository and complete the three sections below. Make at least one commit for each section. When finished, push your commits to your forked repository and submit a Pull Request back to the original repository.
 
-## Ruby Fundamentals
-Complete the questions in `fundamentals.rb`
+This checkpoint is divided into three sections:
 
-## Ruby Enumerables
-Complete the questions in `enums.rb`
+- Fundamentals in `fundamentals.rb`
+- Enumerables in `enums.rb`
+- Object Oriented Ruby in `oop.rb`
 
-## Ruby OOP
-Complete the questions in `oop.rb`
+Each section has a series of prompts written in inline-comments. Write the Ruby necessary to complete each prompt.
 
-## Pro Tip: Test Your Code
+**Make a commit after you complete each section.**
 
-You should first test your code's functionality in the terminal.
+## Submission
 
-Once you think your code is correct, you can run the tests that will evaluate your solutions to double-check them.
+Fork this repository and clone your fork locally. Commit as you go. When you are finished, push to GitHub.
 
-To do so, first install the testing gems from the Gemfile:
-```
-bundle install
-```
-Then call the test runner each time you want to check your code:
-```
-rspec --format documentation
-```
-> IMPORTANT: To allow the tests to run without interruption, comment out any `binding.pry` statements in your code each time before calling the test runner
+**Wait until the end of the hour to make your Pull Request**
