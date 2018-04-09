@@ -41,7 +41,7 @@ class Lion < Animal
 attr_accessor :king, :name
     def initialize(name)
         @name = name
-        if @name = "Simba" then @king = true
+        if @name == "Simba" then @king = true
         else @king = false
         end
     end
