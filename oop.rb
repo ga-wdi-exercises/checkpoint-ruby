@@ -5,12 +5,23 @@
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
 
-
-
+class Animal
+	def intialize(name, greet)
+		@name=name
+		@greet=greet
+	end
+	def get_name
+		return name
+	end
+	def set_name
+		@name=name
+end
 
 # Question 7
 # Create a new `Animal` instance with the name "Pumba".
 # Type your solution directly below this line:
+
+animal = Animal.new("Pumba")
 
 
 
