@@ -5,22 +5,22 @@
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
 
-# class Animal
-#     attr_accessor :name
-#     def initialize(name)
-#         @name = name
-#     end
+class Animal
+    attr_accessor :name
+    def initialize(name)
+        @name = name
+    end
 
-#     def greet
-#         "Hi, I am animal type #{@name}"
-#     end
-# end
+    def greet
+        "Hi, I am animal type #{@name}"
+    end
+end
 
 # Question 7
 # Create a new `Animal` instance with the name "Pumba".
 # Type your solution directly below this line:
 
-# pumba = Animal.new("Pumba")
+pumba = Animal.new("Pumba")
 
 
 
@@ -32,16 +32,16 @@
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
 
-# class Lion < Animal
+class Lion < Animal
 
-#     def initialize(name)
-#         super
-#         @king = false
-#         if @name == "Simba"
-#             @king = true
-#         end
-#     end
-# end
+    def initialize(name)
+        super
+        @king = false
+        if @name == "Simba"
+            @king = true
+        end
+    end
+end
 
 
 
@@ -49,4 +49,4 @@
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
 
-# simba = Lion.new("Simba")
+simba = Lion.new("Simba")
