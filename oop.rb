@@ -40,8 +40,9 @@ pumba = Animal.new("Pumba")
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
 
+# My answer 
 # class Lion < Animal
-#     def initialize (name, king = Boolean)
+#     def initialize(name, king = Boolean)
 #      @name = name
 #    end 
  
@@ -52,4 +53,4 @@ pumba = Animal.new("Pumba")
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
 
-# Simba = Lion.new("Simba")
+Simba = Lion.new("Simba")
