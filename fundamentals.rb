@@ -6,6 +6,9 @@
 
 
 
+offer_rose = "person"
+
+puts "Would you take this rose, #{offer_rose}, in exchange for giving an old beggar woman shelter from the bitter cold?"
 
 
 
@@ -27,7 +30,9 @@ town = {
 # Type your solution directly below this line:
 
 
+delete.town[:residents][1]
 
+town[guests.push('Belle')]
 
 
 
@@ -43,3 +48,11 @@ friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 # "Belle is friends with Lumière"
 # "Belle is friends with Mrs. Potts"
 # Type your solution directly below this line:
+
+friends.each do |friend|
+  puts friend
+end
+
+friends.each do |friend|
+puts "Belle is friends with #{friend}"
+end
