@@ -4,14 +4,23 @@
 # - A `greet` instance method
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
+require "rspec"
 
+class Animal
+    attr_accessor :name
+    def initialize(name)
+        @name = name
+    end
 
+    def introduce
+        return "#{@name.capitalize}" 
+    end
 
 
 # Question 7
 # Create a new `Animal` instance with the name "Pumba".
 # Type your solution directly below this line:
-
+pumba = new Animal("Pumba")
 
 
 
@@ -23,10 +32,20 @@
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
 
-
+class Lion < Animal
+@king = false
+end
+def king (name)
+    if "#{name}" == "Simba"
+        @king = true
+    end
+end
 
 
 
 # Question 9
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
+
+simba = new Lion("Simba")
+simba.king
