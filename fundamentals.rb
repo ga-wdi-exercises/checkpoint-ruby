@@ -9,7 +9,6 @@ def offer_rose (person)
   puts "Would you take this rose, #{person}, in exchange for giving an old beggar woman shelter from the bitter cold?"
 end
 
-
 # Question 2
 # Assume the following hash...
 
@@ -30,6 +29,7 @@ town = {
 town[:residents].delete_at(1)
 town[:castle][:guests].push("Belle")
 
+# puts town
 
 
 
