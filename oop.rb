@@ -15,6 +15,7 @@ class Animal
     def introduce
         return "#{@name.capitalize}" 
     end
+end 
 
 
 # Question 7
