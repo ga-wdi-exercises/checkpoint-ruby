@@ -13,10 +13,7 @@ lost_boys = [
 # 30 years.
 # Type your solution directly below this line:
 
-
-
-
-
+lost_boys.each { |boy| puts boy[:age] + 30 }
 
 # Question 5
 # Assume the following array:
@@ -27,3 +24,5 @@ children = ['Wendy', 'John', 'Michael']
 # of their names. Assign the returned array to a variable called `darling_children`.
 # Example: `Wendy` should become `Wendy Darling` in the new array.
 # Type your solution directly below this line:
+darling_children = children.map { |child| child + " Darling"} 
+puts darling_children
