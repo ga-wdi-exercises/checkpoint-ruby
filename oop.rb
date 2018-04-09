@@ -27,9 +27,9 @@ end
 # Animal.new.set_name("Daniel")
 # Animal.new.greet
     
-me = Animal.new
-me.set_name("Daniel")
-me.greet
+# me = Animal.new
+# me.set_name("Daniel")
+# me.greet
 
 
 
@@ -39,7 +39,7 @@ me.greet
 # Create a new `Animal` instance with the name "Pumba".
 # Type your solution directly below this line:
 
-Pumba = Animal.new("Pumba")
+pumba = Animal.new("Pumba")
 
 
 
