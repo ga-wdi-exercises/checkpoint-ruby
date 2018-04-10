@@ -13,7 +13,8 @@ lost_boys = [
 # 30 years.
 # Type your solution directly below this line:
 
-lost_boys.each { |boy| puts boy[:age] + 30 }
+lost_boys.each { |boy| puts boy[:age] += 30 }
+puts lost_boys
 
 # Question 5
 # Assume the following array:
