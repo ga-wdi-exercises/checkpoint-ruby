@@ -3,6 +3,7 @@
 # When called the method should print to the terminal:
 # "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 # Type your solution directly below this line:
+
 def offer_rose(person)
   puts "Would you take this rose, #{person}, in exchange for giving an old beggar woman shelter from the bitter cold?"
 end
@@ -11,8 +12,8 @@ end
 
 
 
-# Question 2
-# Assume the following hash...
+# # Question 2
+# # Assume the following hash...
 
 town = {
   residents: ["Maurice", "Belle", "Gaston"],
@@ -23,12 +24,14 @@ town = {
   }
 }
 
-# Using Ruby...
-# - Remove "Belle" from `residents`
-# - Add "Belle" to the `guests` array
-# Type your solution directly below this line:
-town[residents].slice(1)
-town[castle]:residents.push("Belle")
+# # Using Ruby...
+# # - Remove "Belle" from `residents`
+# # - Add "Belle" to the `guests` array
+# # Type your solution directly below this line:
+town[:residents].delete('Belle')
+town[:castle][:guests].push("Belle")
+
+puts town
 
 
 

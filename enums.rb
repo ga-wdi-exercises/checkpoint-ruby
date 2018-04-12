@@ -12,7 +12,19 @@ lost_boys = [
 # Use `.each` to iterate over the `lost_boys` array and increase each boy's age by
 # 30 years.
 # Type your solution directly below this line:
-lost_boys[age].each { |age| age = age + 30 }
+
+lost_boys = [
+  {name: 'Tootles', age: 11},
+  {name: 'Nibs', age: 9},
+  {name: 'Slightly', age: 10},
+  {name: 'Curly', age: 8},
+  {name: 'The Twins', age: 9}
+]
+
+# Use `.each` to iterate over the `lost_boys` array and increase each boy's age by
+# 30 years.
+# Type your solution directly below this line:
+lost_boys.each { |boy| boy[:age] += 30 }
 
 
 
@@ -28,9 +40,8 @@ children = ['Wendy', 'John', 'Michael']
 # Example: `Wendy` should become `Wendy Darling` in the new array.
 # Type your solution directly below this line:
 
-chilren.map do |name|
-  new_name = "#{name} Darling"
-  darling_children = []
-  darling_children.push(new_name)
-  puts darling_children
+
+darling_children = children.map do |name|
+  name + " Darling"
 end
+
