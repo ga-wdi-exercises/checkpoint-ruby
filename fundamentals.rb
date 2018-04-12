@@ -4,13 +4,16 @@
 # "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 # Type your solution directly below this line:
 
+def offer_rose(person)
+  puts "Would you take this rose, #{person}, in exchange for giving an old beggar woman shelter from the bitter cold?"
+end
 
 
 
 
 
-# Question 2
-# Assume the following hash...
+# # Question 2
+# # Assume the following hash...
 
 town = {
   residents: ["Maurice", "Belle", "Gaston"],
@@ -21,11 +24,14 @@ town = {
   }
 }
 
-# Using Ruby...
-# - Remove "Belle" from `residents`
-# - Add "Belle" to the `guests` array
-# Type your solution directly below this line:
+# # Using Ruby...
+# # - Remove "Belle" from `residents`
+# # - Add "Belle" to the `guests` array
+# # Type your solution directly below this line:
+town[:residents].delete('Belle')
+town[:castle][:guests].push("Belle")
 
+puts town
 
 
 
@@ -43,3 +49,9 @@ friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 # "Belle is friends with Lumière"
 # "Belle is friends with Mrs. Potts"
 # Type your solution directly below this line:
+
+for name in friends
+  puts "Belle is a friend with #{name}"
+end
+
+#friends.each{ |name| puts "Belle is a friend with #{name}" }
