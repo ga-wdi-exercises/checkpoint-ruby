@@ -14,6 +14,10 @@ lost_boys = [
 # Type your solution directly below this line:
 
 
+users.each do :age = 30
+  puts 
+end
+
 
 
 

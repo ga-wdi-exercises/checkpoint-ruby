@@ -4,17 +4,16 @@
 # "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 # Type your solution directly below this line:
 
+def offer_rose (person)
+  puts "Would you take this rose, #{person} in exchange for giving an 
+  old beggar woman shelter from the bitter cold?"
+end
 
-
-offer_rose = "person"
-
-puts "Would you take this rose, #{offer_rose}, in exchange for giving an old beggar woman shelter from the bitter cold?"
-
-
+offer_rose ("Qya")
 
 # Question 2
 # Assume the following hash...
-
+ 
 town = {
   residents: ["Maurice", "Belle", "Gaston"],
   castle: {
@@ -30,12 +29,9 @@ town = {
 # Type your solution directly below this line:
 
 
-delete.town[:residents][1]
+town[:residents] = ["Maurice", "Gaston"]
 
-town[guests.push('Belle')]
-
-
-
+town[:castle][:guests] = ["Belle"]
 
 # Question 3
 # Assume you have an array of strings representing friends' names...
