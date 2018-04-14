@@ -33,14 +33,14 @@ rabbit = Animal.new("Pumba")
 # Type your solution directly below this line:
 
 class Lion < Animal
-    def initialize(name,king)
-    super(name)
-    @name= name
-    @king= if name =="Simba" do @king = true
-    else @king = false
+    def initialize(name)
+    super(name)    
+        if name == "Simba" 
+            @king = true
+        else @king = false
+        end
     end
-    end
-
+end
 
 
 # Question 9
