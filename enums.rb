@@ -34,6 +34,9 @@ children = ['Wendy', 'John', 'Michael']
 # Example: `Wendy` should become `Wendy Darling` in the new array.
 # Type your solution directly below this line:
 
-children.map{ |child| puts child + ' Darling' }
+
+ darling_children = children.map { |child| child + " Darling" }
+
+
 
 
