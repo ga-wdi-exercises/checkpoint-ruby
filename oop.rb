@@ -5,25 +5,26 @@
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
 
-class Animal
-    def initialize (name)
+
+
+  class Animal
+    def initialize(name)
       @name = name
     end
-  
-    def self.greet
-      return "Greetings"
-    end
-  
-    def get
-      return @name
-    end
-  
-    def set(new_name)
-      @name = new_name
-    end
-  
-  end
 
+      # def get_name
+      #   return @name
+      # end
+    
+      # def set_name(name)
+      #   @name = name
+      # end
+  
+    def greet
+      return 'Hello'
+    end
+   
+  end
 
 # Question 7
 # Create a new `Animal` instance with the name "Pumba".
@@ -37,20 +38,25 @@ pumba = Animal.new("Pumba")
 # Each lion should have the same attributes and methods as `Animal`. Each lion
 # should also have...
 # - A `king` (Boolean) attribute
-# - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
+# - 
 # Type your solution directly below this line:
 
 # My answer 
-# class Lion < Animal
-#     def initialize(name, king = Boolean)
-#      @name = name
-#    end 
- 
-
+ class Lion < Animal
+    def initialize(name)
+      super
+      @king = false
+      if @name == "Simba"
+        @king = true
+      end
+    end
+  end
 
 
 # Question 9
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
 
-Simba = Lion.new("Simba")
+# Simba = Lion.new("Simba")
+simba = Lion.new("Simba")
+puts simba.return_lions_name() 
