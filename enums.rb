@@ -13,17 +13,27 @@ lost_boys = [
 # 30 years.
 # Type your solution directly below this line:
 
+lost_boys.each do|lost_boys|
+  lost_boys[:age] += 30
+end
 
-
-
-
+# may need to change value in the array
 
 # Question 5
 # Assume the following array:
 
 children = ['Wendy', 'John', 'Michael']
 
+
 # Use `.map` to iterate through the `children` array and add ` Darling` to the end
 # of their names. Assign the returned array to a variable called `darling_children`.
 # Example: `Wendy` should become `Wendy Darling` in the new array.
 # Type your solution directly below this line:
+
+darlings = children.map do |person|
+new_name = person + " Darling"
+puts new_name
+new_name
+end 
+almost = darlings.join(",")
+darling_children = almost.split(",")
