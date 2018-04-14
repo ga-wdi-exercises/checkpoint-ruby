@@ -5,23 +5,14 @@
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
 
-
-
   class Animal
+    attr_accessor :name
     def initialize(name)
       @name = name
     end
 
-      # def get_name
-      #   return @name
-      # end
-    
-      # def set_name(name)
-      #   @name = name
-      # end
-  
     def greet
-      return 'Hello'
+      "Hello #{name}"
     end
    
   end
