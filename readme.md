@@ -21,7 +21,3 @@ Each section has a series of prompts written in inline-comments. Write the Ruby 
 **Make a commit after you complete each section.**
 
 ## Submission
-
-Fork this repository and clone your fork locally. Commit as you go. When you are finished, push to GitHub.
-
-**Wait until the end of the hour to make your Pull Request**
