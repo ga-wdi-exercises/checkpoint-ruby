@@ -5,7 +5,7 @@
 # Type your solution directly below this line:
 
 def offer_rose(person)  
-  'Would you take this rose, ' + person + ' , in exchange for giving an old beggar woman shelter from the bitter cold?'
+  puts 'Would you take this rose, ' + person + ' , in exchange for giving an old beggar woman shelter from the bitter cold?'
 end  
 
 
@@ -29,11 +29,8 @@ town = {
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
 
-
-town[:residents] = ["Maurice", "Gaston"] 
-town[:guests] = "Belle" 
-puts town
-
+town[:residents].delete('Belle')
+town[:castle][:guests].push("Belle")
 
 
 
