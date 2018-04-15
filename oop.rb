@@ -7,20 +7,14 @@
 
 #literally took this from the lesson and changed names...
 class Animal 
-    # def greet
-    #     puts "Hi, I'm #{@name}" #?????
-    # end
-    # puts greet
-    def set_name(some_string)
-        @name = some_string
-      end
-    
-      def get_name
-        return @name
-      end
+    attr_accessor :name
+    #literally changed set_name to initialize.... and now everything works....????
+    def initialize (name)
+        @name = name
+    end
 
-      def greet
-        puts "Hi, I'm #{@name}"
+    def greet
+        puts "Hi, I'm #{@name}."
     end
 end
 
@@ -60,9 +54,9 @@ class Lion < Animal
                 true
             else 
                 false
+            end
     end
-end
-
+end 
 
 # Question 9
 # Create a new instance of `Lion` with the name "Simba".
