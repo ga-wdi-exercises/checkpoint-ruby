@@ -4,30 +4,47 @@
 # - A `greet` instance method
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
+# class Animal 
+#     def initialize (name)
+#         @name = name 
+#     end 
+
+#     def greet 
+#         return "Hi I'm a #{name}"
+#     end 
+
+#     def get_name 
+#         return @name
+#     end 
+
+#  def set_name (name) 
+#     @name = name 
+#  end 
+
 class Animal 
-    def initialize (name)
+    attr_accessor :name 
+    def initialize(name)
         @name = name 
     end 
 
     def greet 
-        return "Hi I'm a #{name}"
+        return "Hi I'm #{@name}"
     end 
+end 
 
-    def get_name 
-        return @name
-    end 
-
- def set_name (name) 
-    @name = name 
- end 
 
 # Question 7
 # Create a new `Animal` instance with the name "Pumba".
 # Type your solution directly below this line:
 
-pumba = Animal.new 
-pumba.set_name("Poomba")
-puts pumba.get_name
+# pumba = Animal.new 
+# pumba.set_name("Poomba")
+# puts pumba.get_name
+
+pumba = Animal.new("Pumba")
+# pumba.set_name("Pumba")
+# puts pumba.get_name
+# puts pumba.name 
 
 
 
@@ -38,10 +55,31 @@ puts pumba.get_name
 # - A `king` (Boolean) attribute
 # - Only set the `king` attribute to `true` if the instance's `name` is "Simba"
 # Type your solution directly below this line:
+# class Lion < Animal
+#     def king 
+#         puts "Are you Simba?"
+#     end 
+
+# class Lion < Animal 
+#     attr_accessor :king
+#     def initialize(king)
+#         super 
+#         @king = king 
+#     end 
+# end 
+
 class Lion < Animal
-    def king 
-        puts "Are you Simba?"
+    def initialize(name)
+        super(name)
+        @king = 
+        if name = "Simba"
+            true 
+        else 
+            false 
+        end 
     end 
+end 
+
 
 
 
@@ -49,4 +87,8 @@ class Lion < Animal
 # Question 9
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
-Simba = Lion.new 
+# Simba = Lion.new 
+
+Simba = Lion.new("Simba")
+
+# lion = Lion.new("Simba")
