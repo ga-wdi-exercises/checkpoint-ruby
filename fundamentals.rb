@@ -25,8 +25,8 @@ town = {
 # - Remove "Belle" from `residents`
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
-[:residents].delete("Belle")
-[:guests].push("Belle")
+town[:residents].delete("Belle")
+town[:castle][:guests].push("Belle")
 
 
 

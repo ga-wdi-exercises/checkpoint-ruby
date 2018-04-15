@@ -6,30 +6,17 @@
 # Type your solution directly below this line:
 
 class Animal
-  def initialize
-    puts "Creating a new animal"
-  end
+  attr_accessor :name
 
-  def set_name(new_name)
-    @name = new_name
-  end
-
-  def get_name
-    @name
-  end
-
-  def name
-    @name
+  def initialize(name)
+    @name = name
   end
 
   def greet
-  puts "Hi! My name is #{@name}!"
+    return "Hi! My name is #{@name}!"
   end
 end
 
-me = User.new
-me.set_name("Hyojin")
-me.greet
 
 # Question 7
 # Create a new `Animal` instance with the name "Pumba".
@@ -46,11 +33,7 @@ me.greet
 # pumba.name = "Pumba"
 # puts pumba.name
 
-pumba = Animal.new
-
-pumba.name = "Pumba"
-
-puts pumba.name
+pumba = Animal.new("Pumba")
 
 # Question 8
 # Define a Ruby class called `Lion` that inherits from the `Animal` class.
@@ -61,9 +44,12 @@ puts pumba.name
 # Type your solution directly below this line:
 
 class Lion < Animal
-  attr_accessor :name, :king
+  attr_accessor :king
 
-
+  def initialize(king)
+    super
+    @king = king
+  end
 end
 
 
@@ -72,6 +58,4 @@ end
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
 
-class Simba < Lion
-  
-end
+lion = Lion.new("Simba")
