@@ -4,9 +4,8 @@
 # "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 # Type your solution directly below this line:
 
-def offer_rose 
-  person = "person"
-  puts person
+def offer_rose (person)
+  puts "Would you take this rose, #{person}, in exchange for giving an old beggar woman shelter from the bitter cold?"
 end
 
 
@@ -28,12 +27,14 @@ town = {
 # - Remove "Belle" from `residents`
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
-delete_list = ["Belle"]
-delete_list.each do |del|
-  town[:residents].delete_at(town[:residents].index(del))
-end
-puts town[:castle][:guests] = "Belle"
-puts town
+town[:residents].delete_at(1)
+town[:castle][:guests].push("Belle")
+# delete_list = ["Belle"]
+# delete_list.each do |del|
+#   town[:residents].delete_at(town[:residents].index(del))
+# end
+# puts town[:castle][:guests] = "Belle"
+# puts town
 
 
 

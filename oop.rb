@@ -12,8 +12,8 @@ class Animal
         @name = name
     end
 
-    def introduce
-        return "#{@name.capitalize}" 
+    def greet
+        puts "#{@name.capitalize}" 
     end
 end 
 
@@ -21,7 +21,7 @@ end
 # Question 7
 # Create a new `Animal` instance with the name "Pumba".
 # Type your solution directly below this line:
-pumba = new Animal("Pumba")
+pumba = Animal.new("Pumba")
 
 
 
@@ -34,12 +34,16 @@ pumba = new Animal("Pumba")
 # Type your solution directly below this line:
 
 class Lion < Animal
+def initialize (name)
+super(name)
 @king = false
 end
-def king (name)
-    if "#{name}" == "Simba"
+
+def king
+    if @name == "Simba"
         @king = true
     end
+end
 end
 
 
@@ -48,5 +52,4 @@ end
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
 
-simba = new Lion("Simba")
-simba.king
+simba = Lion.new("Simba")
