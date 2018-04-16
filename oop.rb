@@ -8,7 +8,7 @@
 #literally took this from the lesson and changed names...
 class Animal 
     attr_accessor :name
-    #literally changed set_name to initialize.... and now everything works....????
+     #literally changed set_name to initialize.... and now everything works....????
     def initialize (name)
         @name = name
     end
