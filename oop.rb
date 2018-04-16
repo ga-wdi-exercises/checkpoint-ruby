@@ -5,6 +5,27 @@
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
 
+#literally took this from the lesson and changed names...
+class Animal 
+    attr_accessor :name
+     #literally changed set_name to initialize.... and now everything works....????
+    def initialize (name)
+        @name = name
+    end
+
+    def greet
+        puts "Hi, I'm #{@name}."
+    end
+end
+
+# Animal.new.set_name("Daniel")
+# Animal.new.greet
+    
+# me = Animal.new
+# me.set_name("Daniel")
+# me.greet
+
+
 
 
 
@@ -12,6 +33,7 @@
 # Create a new `Animal` instance with the name "Pumba".
 # Type your solution directly below this line:
 
+pumba = Animal.new("Pumba")
 
 
 
@@ -24,9 +46,20 @@
 # Type your solution directly below this line:
 
 
-
-
+class Lion < Animal
+    def initialize (name)
+        super(name)
+        @king = 
+            if name = "simba" 
+                true
+            else 
+                false
+            end
+    end
+end 
 
 # Question 9
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
+
+simba = Lion.new("Simba")
